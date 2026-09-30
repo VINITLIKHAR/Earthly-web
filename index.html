@@ -5,18 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save Nature Website Design</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
 
+    <!-- PRECONNECT FOR FASTER FONT LOADING -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <header>
+    <!-- HEADER -->
+    <header id="header">
+        <a href="#home" class="logo">
+            <i class="fas fa-seedling"></i>green
+        </a>
 
-        <a href="#" class="logo"><i class="fas fa-seedling"></i>green</a>
-
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -27,137 +39,282 @@
             </ul>
         </nav>
 
-        <div class="fas fa-bars"></div>
-
+        <div class="fas fa-bars" id="menuBtn"></div>
     </header>
 
+    <!-- HOME -->
     <section class="home" id="home">
-
         <div class="content">
-
             <h1>save earth save life</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum ea dolores commodi iste sed
-                nobis. Ab, quidem. Eum, delectus?</p>
-            <a href="#"><button class="btn">explore.</button></a>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, earum ea dolores commodi iste sed nobis. Ab, quidem. Eum, delectus?</p>
+            <a href="#about"><button class="btn">explore.</button></a>
         </div>
-
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
-
-        <h1 class="heading"> <i class="fas fa-quote-left"></i> about us <i class="fas fa-quote-right"></i> </h1>
+        <h1 class="heading">
+            <i class="fas fa-quote-left"></i> about us <i class="fas fa-quote-right"></i>
+        </h1>
 
         <div class="row">
-
             <div class="image">
-                <img src="./image/about.jpg" alt="">
+                <!-- ADD loading="lazy" TO ALL IMAGES -->
+                <img src="./image/about.jpg" alt="about us" loading="lazy">
             </div>
-
             <div class="content">
                 <h3>together we can save the planet</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias corporis inventore soluta
-                    odio vero, dolor itaque illo eos. Velit, sequi libero animi debitis provident odit perferendis
-                    maxime repudiandae illo.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis fugit corporis dignissimos
-                    saepe! Accusamus accusantium enim laudantium voluptatem ab?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias
+                    corporis inventore soluta odio vero, dolor itaque illo eos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis fugit
+                    corporis dignissimos saepe! Accusamus accusantium enim laudantium voluptatem ab?</p>
                 <a href="#"><button class="btn">learn more</button></a>
             </div>
-
         </div>
 
         <div class="box-container">
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-users"></i>
                 <h3>1000+</h3>
                 <p>volunteers</p>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-tree"></i>
                 <h3>1300+</h3>
                 <p>trees planted</p>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-paw"></i>
                 <h3>450+</h3>
                 <p>animals saved</p>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-donate"></i>
                 <h3>850+</h3>
                 <p>donators</p>
             </div>
-
         </div>
-
     </section>
-    
-    <section class="service" id="service">
 
-        <h1 class="heading"> <i class="fas fa-quote-left"></i> our services <i class="fas fa-quote-right"></i> </h1>
+    <!-- SERVICE -->
+    <section class="service" id="service">
+        <h1 class="heading">
+            <i class="fas fa-quote-left"></i> our services <i class="fas fa-quote-right"></i>
+        </h1>
 
         <div class="box-container">
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-seedling"></i>
                 <h3>planting</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-recycle"></i>
                 <h3>recycle</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-hand-holding-water"></i>
                 <h3>water saving</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-tree"></i>
                 <h3>tree saving</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-paw"></i>
                 <h3>animals saving</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
             </div>
-
-            <div class="box">
+            <div class="box reveal">
                 <i class="fas fa-solar-panel"></i>
                 <h3>solar panel</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-                <a href="#">read more>></a>
+                <a href="#">read more &raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="project" id="project">
+        <h1 class="heading">
+            <i class="fas fa-quote-left"></i> our projects <i class="fas fa-quote-right"></i>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/ours.1.jpg" alt="project 1" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/ours.2.jpg" alt="project 2" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/ours.3.jpg" alt="project 3" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/ours.4.jpg" alt="project 4" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/ours.5.jpg" alt="project 5" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/ours.6.jpg" alt="project 6" loading="lazy">
+                <div class="icons">
+                    <a style="--i:1;" href="#" class="fas fa-heart"></a>
+                    <a style="--i:2;" href="#" class="fas fa-share"></a>
+                    <a style="--i:3;" href="#" class="fas fa-comment"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE -->
+    <section class="donate" id="donate">
+        <h1 class="heading">
+            <i class="fas fa-quote-left"></i> donate us <i class="fas fa-quote-right"></i>
+        </h1>
+
+        <!-- VIDEO WRAPPED IN CONTAINER -->
+        <div class="video-container">
+            <video src="./video/23881-337972830.mp4" loop autoplay muted playsinline preload="none">
+            </video>
+        </div>
+
+        <div class="form-container">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="enter your email">
+                    <select name="" id="">
+                        <option value="" selected disabled>donation amount</option>
+                        <option value="$5">$5</option>
+                        <option value="$10">$10</option>
+                        <option value="$15">$15</option>
+                        <option value="$20">$20</option>
+                    </select>
+                </div>
+                <textarea placeholder="message ( optional )"></textarea>
+                <input type="submit" class="btn" value="donate now">
+            </form>
+        </div>
+    </section>
+
+    <!-- POST -->
+    <section class="post" id="post">
+        <h1 class="heading">
+            <i class="fas fa-quote-left"></i> our recent posts <i class="fas fa-quote-right"></i>
+        </h1>
+
+        <div class="box-container">
+            <div class="box reveal">
+                <img src="./image/ours.1.jpg" alt="post 1" loading="lazy">
+                <div class="content">
+                    <span><i class="fas fa-calendar"></i> jan 2, 2021</span>
+                    <h3>post title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis
+                        nostrum voluptates cumque deserunt incidunt.</p>
+                    <a href="#"><button class="btn">read more</button></a>
+                </div>
+            </div>
+            <div class="box reveal">
+                <img src="./image/ours.3.jpg" alt="post 2" loading="lazy">
+                <div class="content">
+                    <span><i class="fas fa-calendar"></i> jan 3, 2021</span>
+                    <h3>post title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis
+                        nostrum voluptates cumque deserunt incidunt.</p>
+                    <a href="#"><button class="btn">read more</button></a>
+                </div>
+            </div>
+            <div class="box reveal">
+                <img src="./image/ours.6.jpg" alt="post 3" loading="lazy">
+                <div class="content">
+                    <span><i class="fas fa-calendar"></i> jan 8, 2021</span>
+                    <h3>post title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis
+                        nostrum voluptates cumque deserunt incidunt.</p>
+                    <a href="#"><button class="btn">read more</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#home" class="logo">
+                    <i class="fas fa-seedling"></i>green
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda possimus impedit voluptate fuga id sapiente
+                    perspiciatis amet eos esse iure.</p>
+            </div>
+
+            <div class="box">
+                <h3 class="share">share</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">github</a>
+            </div>
+
+            <div class="box">
+                <h3 class="letter">newsletter</h3>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <button type="submit" class="fas fa-paper-plane"></button>
+                </form>
             </div>
 
         </div>
 
+        <h1 class="credit">
+            created by <span>Vinit Likhar</span> | all rights reserved.
+        </h1>
     </section>
 
-    
-
-
-
-
-
-
-
-
-
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-top" id="backTop" title="back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="./main.js"></script>
 </body>
